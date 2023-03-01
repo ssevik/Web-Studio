@@ -24,9 +24,28 @@
     <header class="header">
       <div class="container header-inner">
         <nav class="nav">
-          <a class="logo logo-header" href="./index.html"
-            >Web<span class="logo-color">Studio</span></a
-          >
+          <div class="menu-box header-logo">
+            <a class="logo" href="./index.html"
+              >Web<span class="logo-color">Studio</span></a
+            >
+
+            <button
+              class="burger-menu js-open-menu"
+              type="button"
+              aria-expanded="false"
+              aria-controls="menu-container"
+            >
+              <svg
+                class="burger-menu-svg"
+                width="32"
+                height="22"
+                aria-label="mobile menu switch"
+              >
+                <use href="./images/sprite.svg#icon-menu-open"></use>
+              </svg>
+            </button>
+          </div>
+
           <ul class="nav-list">
             <li class="nav-list-inem">
               <a class="nav-list-link link-current" href="./index.html"
@@ -173,7 +192,11 @@
           <ul class="list team-list">
             <li class="item team-item">
               <img
-                src="./images/our-team-1.jpg"
+                srcset="
+                  ./images/our-team-1-min.jpg    1x,
+                  ./images/our-team-1@2x-min.jpg 2x
+                "
+                src="./images/our-team-1-min.jpg"
                 alt="Mark Guerrero"
                 width="264"
               />
@@ -233,7 +256,15 @@
               </div>
             </li>
             <li class="item team-item">
-              <img src="./images/our-team-2.jpg" alt="Tom Ford" width="264" />
+              <img
+                srcset="
+                  ./images/our-team-2-min.jpg    1x,
+                  ./images/our-team-2@2x-min.jpg 2x
+                "
+                src="./images/our-team-2-min.jpg"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="team-inner">
                 <h3 class="team-title">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -291,7 +322,11 @@
             </li>
             <li class="item team-item">
               <img
-                src="./images/our-team-3.jpg"
+                srcset="
+                  ./images/our-team-3-min.jpg    1x,
+                  ./images/our-team-3@2x-min.jpg 2x
+                "
+                src="./images/our-team-3-min.jpg"
                 alt="Camila Garcia"
                 width="264"
               />
@@ -352,7 +387,11 @@
             </li>
             <li class="item team-item">
               <img
-                src="./images/our-team-4.jpg"
+                srcset="
+                  ./images/our-team-4-min.jpg    1x,
+                  ./images/our-team-4@2x-min.jpg 2x
+                "
+                src="./images/our-team-4-min.jpg"
                 alt="Daniel Wilson"
                 width="264"
               />
@@ -635,6 +674,72 @@
       </div>
     </div>
 
+    <div class="menu-container js-menu-container" id="menu-container">
+      <button class="modal-btn menu-container-btn js-close-menu" type="button">
+        <svg class="modal-svg" width="8px" height="8px" aria-label="">
+          <use href="./images/sprite.svg#icon-close-modal"></use>
+        </svg>
+      </button>
+      <div class="menu-container-inner">
+        <ul class="menu-list">
+          <li class="menu-list-inem">
+            <a class="menu-list-link" href="./index.html">Studio</a>
+          </li>
+          <li class="menu-list-inem">
+            <a class="menu-list-link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="menu-list-inem">
+            <a class="menu-list-link" href="">Contacts</a>
+          </li>
+        </ul>
+        <address class="menu-address">
+          <ul class="menu-address-list">
+            <li class="menu-address-list-item">
+              <a class="menu-address-list-link current" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="menu-address-list-item">
+              <a class="menu-address-list-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="tiam-social menu-tiam-social">
+          <li class="tiam-social-item">
+            <a class="tiam-social-link" href="">
+              <svg class="tiam-social-svg" width="24" height="24" aria-label="">
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="tiam-social-item">
+            <a class="tiam-social-link" href="">
+              <svg class="tiam-social-svg" width="24" height="24" aria-label="">
+                <use href="./images/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="tiam-social-item">
+            <a class="tiam-social-link" href="">
+              <svg class="tiam-social-svg" width="24" height="24" aria-label="">
+                <use href="./images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="tiam-social-item">
+            <a class="tiam-social-link" href="">
+              <svg class="tiam-social-svg" width="24" height="24" aria-label="">
+                <use href="./images/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

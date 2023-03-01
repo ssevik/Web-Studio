@@ -24,9 +24,28 @@
     <header class="header">
       <div class="container header-inner">
         <nav class="nav">
-          <a class="logo logo-header" href="./index.html"
-            >Web<span class="logo-color">Studio</span></a
-          >
+          <div class="menu-box header-logo">
+            <a class="logo" href="./index.html"
+              >Web<span class="logo-color">Studio</span></a
+            >
+
+            <button
+              class="burger-menu js-open-menu"
+              type="button"
+              aria-expanded="false"
+              aria-controls="menu-container"
+            >
+              <svg
+                class="burger-menu-svg"
+                width="32"
+                height="22"
+                aria-label="mobile menu switch"
+              >
+                <use href="./images/sprite.svg#icon-menu-open"></use>
+              </svg>
+            </button>
+          </div>
+
           <ul class="nav-list">
             <li class="nav-list-inem">
               <a class="nav-list-link" href="./index.html">Studio</a>
@@ -82,7 +101,34 @@
             <li class="item card-item">
               <a class="card-link" href="">
                 <div class="card-box">
-                  <img src="./images/portfolio-1.jpg" alt="img 1" width="360" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-1-desc-min.jpg    1x,
+                        ./images/portfolio-1-desc@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-1-tab-min.jpg    1x,
+                        ./images/portfolio-1-tab@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-1-min.jpg    1x,
+                        ./images/portfolio-1@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio-1-min.jpg"
+                      alt="img 1"
+                      width="396"
+                    />
+                  </picture>
                   <div class="card-overlay">
                     <p class="card-overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -100,7 +146,34 @@
             <li class="item card-item">
               <a class="card-link" href="">
                 <div class="card-box">
-                  <img src="./images/portfolio-2.jpg" alt="img 1" width="360" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-2-desc-min.jpg    1x,
+                        ./images/portfolio-2-desc@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-2-tab-min.jpg    1x,
+                        ./images/portfolio-2-tab@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-2-min.jpg    1x,
+                        ./images/portfolio-2@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio-2-min.jpg"
+                      alt="img 2"
+                      width="396"
+                    />
+                  </picture>
                   <div class="card-overlay">
                     <p class="card-overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -118,7 +191,34 @@
             <li class="item card-item">
               <a class="card-link" href="">
                 <div class="card-box">
-                  <img src="./images/portfolio-3.jpg" alt="img 1" width="360" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-3-desc-min.jpg    1x,
+                        ./images/portfolio-3-desc@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-3-tab-min.jpg    1x,
+                        ./images/portfolio-3-tab@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-3-min.jpg    1x,
+                        ./images/portfolio-3@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio-3-min.jpg"
+                      alt="img 3"
+                      width="396"
+                    />
+                  </picture>
                   <div class="card-overlay">
                     <p class="card-overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -136,7 +236,34 @@
             <li class="item card-item">
               <a class="card-link" href="">
                 <div class="card-box">
-                  <img src="./images/portfolio-4.jpg" alt="img 1" width="360" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-4-desc-min.jpg    1x,
+                        ./images/portfolio-4-desc@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-4-tab-min.jpg    1x,
+                        ./images/portfolio-4-tab@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-4-min.jpg    1x,
+                        ./images/portfolio-4@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio-4-min.jpg"
+                      alt="img 4"
+                      width="396"
+                    />
+                  </picture>
                   <div class="card-overlay">
                     <p class="card-overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -154,7 +281,34 @@
             <li class="item card-item">
               <a class="card-link" href="">
                 <div class="card-box">
-                  <img src="./images/portfolio-5.jpg" alt="img 1" width="360" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-5-desc-min.jpg    1x,
+                        ./images/portfolio-5-desc@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-5-tab-min.jpg    1x,
+                        ./images/portfolio-5-tab@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-5-min.jpg    1x,
+                        ./images/portfolio-5@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio-5-min.jpg"
+                      alt="img 5"
+                      width="396"
+                    />
+                  </picture>
                   <div class="card-overlay">
                     <p class="card-overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -172,7 +326,34 @@
             <li class="item card-item">
               <a class="card-link" href="">
                 <div class="card-box">
-                  <img src="./images/portfolio-6.jpg" alt="img 1" width="360" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-6-desc-min.jpg    1x,
+                        ./images/portfolio-6-desc@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-6-tab-min.jpg    1x,
+                        ./images/portfolio-6-tab@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-6-min.jpg    1x,
+                        ./images/portfolio-6@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio-6-min.jpg"
+                      alt="img 6"
+                      width="396"
+                    />
+                  </picture>
                   <div class="card-overlay">
                     <p class="card-overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -190,7 +371,34 @@
             <li class="item card-item">
               <a class="card-link" href="">
                 <div class="card-box">
-                  <img src="./images/portfolio-7.jpg" alt="img 1" width="360" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-7-desc-min.jpg    1x,
+                        ./images/portfolio-7-desc@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-7-tab-min.jpg    1x,
+                        ./images/portfolio-7-tab@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-7-min.jpg    1x,
+                        ./images/portfolio-7@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio-7-min.jpg"
+                      alt="img 7"
+                      width="396"
+                    />
+                  </picture>
                   <div class="card-overlay">
                     <p class="card-overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -208,7 +416,34 @@
             <li class="item card-item">
               <a class="card-link" href="">
                 <div class="card-box">
-                  <img src="./images/portfolio-8.jpg" alt="img 1" width="360" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-8-desc-min.jpg    1x,
+                        ./images/portfolio-8-desc@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-8-tab-min.jpg    1x,
+                        ./images/portfolio-8-tab@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-8-min.jpg    1x,
+                        ./images/portfolio-8@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio-8-min.jpg"
+                      alt="img 8"
+                      width="396"
+                    />
+                  </picture>
                   <div class="card-overlay">
                     <p class="card-overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -226,7 +461,34 @@
             <li class="item card-item">
               <a class="card-link" href="">
                 <div class="card-box">
-                  <img src="./images/portfolio-9.jpg" alt="img 1" width="360" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-9-desc-min.jpg    1x,
+                        ./images/portfolio-9-desc@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-9-tab-min.jpg    1x,
+                        ./images/portfolio-9-tab@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-9-min.jpg    1x,
+                        ./images/portfolio-9@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio-9-min.jpg"
+                      alt="img 9"
+                      width="396"
+                    />
+                  </picture>
                   <div class="card-overlay">
                     <p class="card-overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -323,5 +585,71 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="menu-container">
+      <button class="modal-btn menu-container-btn js-close-menu" type="button">
+        <svg class="modal-svg" width="8px" height="8px" aria-label="">
+          <use href="./images/sprite.svg#icon-close-modal"></use>
+        </svg>
+      </button>
+      <div class="menu-container-inner">
+        <ul class="menu-list">
+          <li class="menu-list-inem">
+            <a class="menu-list-link" href="./index.html">Studio</a>
+          </li>
+          <li class="menu-list-inem">
+            <a class="menu-list-link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="menu-list-inem">
+            <a class="menu-list-link" href="">Contacts</a>
+          </li>
+        </ul>
+        <address class="menu-address">
+          <ul class="menu-address-list">
+            <li class="menu-address-list-item">
+              <a class="menu-address-list-link current" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="menu-address-list-item">
+              <a class="menu-address-list-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="tiam-social menu-tiam-social">
+          <li class="tiam-social-item">
+            <a class="tiam-social-link" href="">
+              <svg class="tiam-social-svg" width="24" height="24" aria-label="">
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="tiam-social-item">
+            <a class="tiam-social-link" href="">
+              <svg class="tiam-social-svg" width="24" height="24" aria-label="">
+                <use href="./images/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="tiam-social-item">
+            <a class="tiam-social-link" href="">
+              <svg class="tiam-social-svg" width="24" height="24" aria-label="">
+                <use href="./images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="tiam-social-item">
+            <a class="tiam-social-link" href="">
+              <svg class="tiam-social-svg" width="24" height="24" aria-label="">
+                <use href="./images/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
